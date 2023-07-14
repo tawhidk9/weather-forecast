@@ -1,5 +1,5 @@
 // DEPENDENCIES
-var apiKey = "YOUR_API_KEY";
+var apiKey = 'fa3cf77a02f9bb76410509c901c329c3'
 var searchFormEl = document.querySelector("#search-form");
 var searchInputEl = document.querySelector("#search-input");
 var searchHistoryEl = document.querySelector("#search-history");
