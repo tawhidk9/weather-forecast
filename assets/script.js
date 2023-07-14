@@ -69,4 +69,10 @@ function displayCurrentWeather(data, city) {
     
      var windSpeedEl = document.createElement("p");
     windSpeedEl.textContent = "Wind Speed: " + data.wind.speed + " m/s";
+
+    currentWeatherEl.appendChild(cityNameEl);
+    currentWeatherEl.appendChild(weatherIconEl);
+    currentWeatherEl.appendChild(temperatureEl);
+    currentWeatherEl.appendChild(humidityEl);
+    currentWeatherEl.appendChild(windSpeedEl);
 }
