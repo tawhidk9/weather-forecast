@@ -1,5 +1,5 @@
 // DEPENDENCIES
-var apiKey = 'fa3cf77a02f9bb76410509c901c329c3'
+var apiKey = "fa3cf77a02f9bb76410509c901c329c3"
 var searchFormEl = document.querySelector("#search-form");
 var searchInputEl = document.querySelector("#search-input");
 var searchHistoryEl = document.querySelector("#search-history");
@@ -23,3 +23,8 @@ searchHistoryEl.addEventListener("click", function (event) {
     getWeather(city);
   }
 });
+
+function getWeather(city) {
+    var currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+    var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey;
+}
