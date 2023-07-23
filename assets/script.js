@@ -41,7 +41,7 @@ console.log(cityInput);
 
 // Function to display weather data
 function displayWeatherData(city) {
-    var APIKey = "ba70abfea88f3c5981bd2ee116de0d18";
+    var APIKey = "ced95d4a0b0b94efc33d4bd502c8c38f";
     var geocodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
 
     fetch(geocodeUrl)
