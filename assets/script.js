@@ -35,8 +35,8 @@ fetchWeatherButton.addEventListener('click', function(event) {
     console.log(cityInput);
     if (cityInput) {
         displayWeatherData(cityInput);
-        addSearchToHistory(cityInput);
-        searchInput.value = '';
+        searchHistoryEl(cityInput);
+        searchInputEl.value = '';
     }
 });
 
@@ -45,7 +45,7 @@ console.log(cityInput);
 
 // Function to display weather data
 function displayWeatherData(city) {
-    var APIKey = "ba70abfea88f3c5981bd2ee116de0d18";
+    // var APIKey = "ba70abfea88f3c5981bd2ee116de0d18";
     var geocodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
 
     fetch(geocodeUrl)
