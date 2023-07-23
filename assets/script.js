@@ -26,16 +26,17 @@ displaySearchHistory();
 
 // Add event listener to the fetch button
 fetchWeatherButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    var cityInput = searchInput.value.trim();
-    cityInput = capitalizeFirstLetter(cityInput); // Capitalize the first letter of the city name even if user types in lowercase
-    console.log(cityInput);
-    if (cityInput) {
-        displayWeatherData(cityInput);
-        addSearchToHistory(cityInput);
-        searchInput.value = '';
-    }
+  event.preventDefault();
+  var cityInput = searchInput.value.trim();
+  var city = capitalizeFirstLetter(cityInput); // Add this line to set the 'city' variable
+  console.log(city);
+  if (city) {
+      displayWeatherData(city);
+      addSearchToHistory(city);
+      searchInput.value = '';
+  }
 });
+
 
 console.log(cityInput);
 
